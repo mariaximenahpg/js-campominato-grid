@@ -1,0 +1,100 @@
+/*--------
+Reset
+--------*/
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    height:53.125rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*----------
+Header
+----------*/
+
+header{
+    height:6.25rem;
+    padding:1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    margin-left: 3.75rem;
+}
+
+.btn-play{
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+#difficolta{
+    padding: 5px 20px;
+}
+
+/*-----------
+Main
+------------*/
+
+main{
+    background-color: #7fffd4;
+    flex-grow: 1;
+    display: flex;
+}
+
+.board{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    height: 31.25rem;
+    width: 31.25rem;
+    margin: auto;
+    
+}
+.easy_board{
+    width: calc(100% / 10);
+    height:calc(100% / 10);
+    border:1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active{
+    background-color: #25dbef;
+}
+
+.medium{
+    width: calc(100% / 9);
+    height:calc(100% / 9);
+    border:1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hard{
+    width: calc(100% / 7);
+    height:calc(100% / 7);
+    border:1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-------
+Footer
+-------*/
+
+footer{
+    height:4.375rem;
+    padding:1.25rem;
+}
